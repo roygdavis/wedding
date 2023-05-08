@@ -1,8 +1,10 @@
 @import "functions";
 @import "variables";
 
-$primary: #6f9440;
-$secondary: #3c2313;
+$primary: #23292e;
+$secondary: #dfb3ae;
+$tertiary: #ddded9;
+$forth: #e4bc62;
 
 $link-color:                              $primary;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage);
@@ -10,6 +12,8 @@ $link-hover-color:                        shift-color($link-color, $link-shade-p
 $custom-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "tertiary":   $tertiary,
+  "forth":      $forth,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
