@@ -1,0 +1,24 @@
+@import "functions";
+@import "variables";
+
+$primary: #6f9440;
+$secondary: #3c2313;
+
+$link-color:                              $primary;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage);
+
+$custom-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+        
+@import "bootstrap";
