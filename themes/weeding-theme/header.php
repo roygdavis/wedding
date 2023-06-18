@@ -53,11 +53,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <nav class="navbar navbar-expand-lg">
+  <nav id="mainNav" class="navbar navbar-light navbar-expand-lg bg-tertiary text-uppercase">
     <div class="container">
-      <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-          <img src="<?php bloginfo('template_url') ?>/images/logo.png" width="" height="100">
-      </a>
+      <a class="navbar-brand" href="#page-top">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -72,11 +70,6 @@
           'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
           'walker'          => new WP_Bootstrap_Navwalker(),
           ) ); ?>
-        <form role="search" method="get" id="searchform" class="d-flex align-left" action="http://localhost/">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value="" name="s" id="s">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-          <!-- <input type="submit" id="searchsubmit" value="Search"> -->
-        </form>
       </div>
     </div>
   </nav>
